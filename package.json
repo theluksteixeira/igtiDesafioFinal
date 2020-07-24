@@ -1,0 +1,33 @@
+{
+  "name": "bootcamp-full-stack-desafio-final",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.30",
+    "@fortawesome/free-solid-svg-icons": "5.14.0",
+    "@fortawesome/react-fontawesome": "0.1.11",
+    "cors": "2.8.5",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "moment": "2.27.0",
+    "mongodb": "3.5.9",
+    "mongoose": "5.9.19"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.4"
+  },
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "client/"
+    ]
+  },
+  "engines": {
+    "node": "13.12"
+  }
+}
